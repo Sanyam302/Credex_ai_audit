@@ -73,7 +73,9 @@ async (req, res) => {
       );
 
 
-
+  console.log("AI Summary:", aiSummary);
+  console.log("Findings:", findings);
+  console
 
     res.status(200).json({
 
