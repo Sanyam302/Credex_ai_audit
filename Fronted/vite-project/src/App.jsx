@@ -56,19 +56,10 @@ export default function App() {
       const data = await fetchAuditReport(form);
 
       // Attach submission metadata so ReportDisplay + download can use it
-      setReport({
-        ...data,
-        meta: {
-          name:        form.name,
-          email:       form.email,
-          tool:        toolName,
-          spent:       Number(form.amountSpent),
-          purpose:     purposeName,
-          team_size:   Number(form.team_size),
-          generatedAt: new Date().toLocaleString(),
-        },
-      });
-    } catch {
+      setReport(data);
+      
+    } catch (error) {
+      console.error("Error fetching audit report:", error);
       setError("Failed to generate report. Please check your inputs and try again.");
     } finally {
       setLoading(false);

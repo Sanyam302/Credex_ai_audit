@@ -94,7 +94,7 @@ fetchAuditReport(form) {
       "Failed to generate audit"
     );
   }
-
+   
   return await response.json();
 }
 

@@ -75,41 +75,172 @@ export const PURPOSES = [
 
 
 
-export const PLANS = [
+export const TOOL_PLANS = {
 
-  {
-    label: "Free",
-    value: "free"
-  },
+  chatgpt: [
 
-  {
-    label: "Plus",
-    value: "plus"
-  },
+    {
+      label: "Plus",
+      value: "plus"
+    },
 
-  {
-    label: "Pro",
-    value: "pro"
-  },
+    {
+      label: "Team",
+      value: "team"
+    },
 
-  {
-    label: "Team",
-    value: "team"
-  },
+    {
+      label: "Enterprise",
+      value: "enterprise"
+    },
 
-  {
-    label: "Business",
-    value: "business"
-  },
+    {
+      label: "API",
+      value: "api"
+    }
 
-  {
-    label: "Enterprise",
-    value: "enterprise"
-  },
+  ],
 
-  {
-    label: "API",
-    value: "api"
-  }
 
-];
+
+  claude: [
+
+    {
+      label: "Free",
+      value: "free"
+    },
+
+    {
+      label: "Pro",
+      value: "pro"
+    },
+
+    {
+      label: "Max",
+      value: "max"
+    },
+
+    {
+      label: "Team",
+      value: "team"
+    },
+
+    {
+      label: "Enterprise",
+      value: "enterprise"
+    },
+
+    {
+      label: "API",
+      value: "api"
+    }
+
+  ],
+
+
+
+  cursor: [
+
+    {
+      label: "Hobby",
+      value: "hobby"
+    },
+
+    {
+      label: "Pro",
+      value: "pro"
+    },
+
+    {
+      label: "Business",
+      value: "business"
+    },
+
+    {
+      label: "Enterprise",
+      value: "enterprise"
+    }
+
+  ],
+
+
+
+  copilot: [
+
+    {
+      label: "Individual",
+      value: "individual"
+    },
+
+    {
+      label: "Business",
+      value: "business"
+    },
+
+    {
+      label: "Enterprise",
+      value: "enterprise"
+    }
+
+  ],
+
+
+
+  gemini: [
+
+    {
+      label: "Pro",
+      value: "pro"
+    },
+
+    {
+      label: "Ultra",
+      value: "ultra"
+    },
+
+    {
+      label: "API",
+      value: "api"
+    }
+
+  ],
+
+
+
+  windsurf: [
+
+    {
+      label: "Pro",
+      value: "pro"
+    },
+
+    {
+      label: "Team",
+      value: "team"
+    }
+
+  ],
+
+
+
+  "openai-api": [
+
+    {
+      label: "API",
+      value: "api"
+    }
+
+  ],
+
+
+
+  "anthropic-api": [
+
+    {
+      label: "API",
+      value: "api"
+    }
+
+  ]
+
+};

@@ -1,5 +1,10 @@
 import { styles } from "../styles.js";
-import { AI_TOOLS, PURPOSES ,PLANS} from "../constants.js";
+import {
+  AI_TOOLS,
+  PURPOSES,
+  TOOL_PLANS
+}
+from "../constants.js";
 
 export default function AuditForm({ form, onChange, onSubmit, loading, error }) {
   return (
@@ -85,14 +90,14 @@ export default function AuditForm({ form, onChange, onSubmit, loading, error }) 
         Select plan…
       </option>
 
-      {PLANS.map((p) => (
+      {TOOL_PLANS[form.tool]?.map((p) => (
 
-  <option
-    key={p.value}
-    value={p.value}
-  >
-    {p.label}
-  </option>
+    <option
+      key={p.value}
+      value={p.value}
+    >
+      {p.label}
+    </option>
 
 ))}
 
